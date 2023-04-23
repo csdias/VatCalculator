@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B11ECF19-044B-433A-97EA-6FDD41BBE5F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VatCalculator.Application", "src\Application\VatCalculator.Application.csproj", "{90817206-7716-4D14-9368-1F028CB84D9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VatCalculator.Domain", "src\Domain\VatCalculator.Domain.csproj", "{DCB71162-8293-4C2A-8278-1EB61F9963AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BE762858-732A-4162-8F13-2163A73BBCDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VatCalculator.Application.UnitTests", "tests\Application.UnitTests\VatCalculator.Application.UnitTests.csproj", "{05B55D2E-987E-4F25-A880-FE4F61C1E7D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VatCalculator.App", "src\App\VatCalculator.App.csproj", "{50A1DCBD-ECFF-4672-B5DC-221F483A1488}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE744917-4861-4023-AD8D-8C0D8EE9AA69}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90817206-7716-4D14-9368-1F028CB84D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90817206-7716-4D14-9368-1F028CB84D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90817206-7716-4D14-9368-1F028CB84D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90817206-7716-4D14-9368-1F028CB84D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB71162-8293-4C2A-8278-1EB61F9963AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB71162-8293-4C2A-8278-1EB61F9963AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB71162-8293-4C2A-8278-1EB61F9963AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB71162-8293-4C2A-8278-1EB61F9963AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A1DCBD-ECFF-4672-B5DC-221F483A1488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A1DCBD-ECFF-4672-B5DC-221F483A1488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A1DCBD-ECFF-4672-B5DC-221F483A1488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A1DCBD-ECFF-4672-B5DC-221F483A1488}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90817206-7716-4D14-9368-1F028CB84D9D} = {B11ECF19-044B-433A-97EA-6FDD41BBE5F0}
+		{DCB71162-8293-4C2A-8278-1EB61F9963AB} = {B11ECF19-044B-433A-97EA-6FDD41BBE5F0}
+		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2} = {BE762858-732A-4162-8F13-2163A73BBCDA}
+		{50A1DCBD-ECFF-4672-B5DC-221F483A1488} = {B11ECF19-044B-433A-97EA-6FDD41BBE5F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A29E5E7C-97B1-45E8-ACF6-C566399FEF96}
+	EndGlobalSection
+EndGlobal
