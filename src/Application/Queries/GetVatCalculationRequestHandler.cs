@@ -33,7 +33,9 @@ public class GetVatCalculationRequestHandler
                     => new GetVatCalculationResponse()
                     {
                         VatRate = request.VatRate,
-                        Vat = request.Vat
+                        Vat = request.Vat,
+                        PriceWithoutVat = request.Vat/(request.VatRate / 100),
+                        PriceWithVat = (request.Vat / (request.VatRate / 100)) + request.Vat
                     },
 
             { PriceWithVat: > 0 }
