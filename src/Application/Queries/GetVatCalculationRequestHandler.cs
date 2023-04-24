@@ -26,6 +26,7 @@ public class GetVatCalculationRequestHandler
                         VatRate = request.VatRate,
                         PriceWithoutVat = request.PriceWithoutVat,
                         PriceWithVat = - ( - request.PriceWithoutVat - (request.PriceWithoutVat * (request.VatRate/100))),
+                        Vat = -(-request.PriceWithoutVat - (request.PriceWithoutVat * (request.VatRate / 100))) - request.PriceWithoutVat,
                     },
 
             { Vat: > 0 }

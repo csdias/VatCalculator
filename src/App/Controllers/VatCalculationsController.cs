@@ -1,4 +1,3 @@
-using VatCalculator.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using VatCalculator.Application.Queries.GetVatCalculationQuery;
