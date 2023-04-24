@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["VatCalculator.App.csproj", "."]
-RUN dotnet restore "./VatCalculator.App.csproj"
+COPY ["VatCalculator.WebApp.csproj", "."]
+RUN dotnet restore "./VatCalculator.WebApp.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "VatCalculator.App.csproj" -c Release -o /app/build
+RUN dotnet build "VatCalculator.WebApp.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "VatCalculator.App.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "VatCalculator.WebApp.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "VatCalculator.App.dll"]
+ENTRYPOINT ["dotnet", "VatCalculator.WebApp.dll"]

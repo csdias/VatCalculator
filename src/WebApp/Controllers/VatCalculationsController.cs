@@ -6,7 +6,7 @@ using MediatR;
 
 namespace VatCalculator.App.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/vat-calculations")]
     public class VatCalculationsController: ApiController
     {
         private readonly ILogger<VatCalculationsController> _logger;
