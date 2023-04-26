@@ -6,8 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>15e3f31b-a24d-4120-a64e-233d8f0ca962</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>.</DockerfileContext>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="oldDockerfile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="oldDockerfile" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />

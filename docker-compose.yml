@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vatcalculator.webapp:
+    image: ${DOCKER_REGISTRY-}vatcalculatorwebapp
+    build:
+      context: .
+      dockerfile: src/WebApp/Dockerfile
