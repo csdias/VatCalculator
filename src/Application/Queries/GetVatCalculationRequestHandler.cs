@@ -46,7 +46,9 @@ public class GetVatCalculationRequestHandler
                         PriceWithoutVat = request.PriceWithVat / (1 + (request.VatRate / 100)),
                         Vat = (request.PriceWithVat / (1 + (request.VatRate / 100)) ) * (request.VatRate / 100)
                     },
-            { } => throw new ArgumentNullException(nameof(request), "Can't calculate VAT on this input"),
-            null => throw new ArgumentNullException(nameof(request), "Can't calculate VAT on null input")
+
+            { } => throw new Exception("Couldn't calculate on this input"),
+
+            null => throw new ArgumentNullException(nameof(request), "Couldn't calculate on null input")
         };
 }
