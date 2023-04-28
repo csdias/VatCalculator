@@ -1,6 +1,7 @@
 using FluentValidation;
 using MediatR;
 using VatCalculator.Application.Behaviors;
+using VatCalculator.Application.Common;
 using VatCalculator.Application.Queries.GetVatCalculationQuery;
 using VatCalculator.Application.Services;
 using VatCalculator.Application.Services.Abstractions;
@@ -16,9 +17,7 @@ builder.Services.AddValidatorsFromAssembly(
     VatCalculator.Application.AssemblyReference.Assembly,
     includeInternalTypes: true);
 
-builder.Services.AddScoped<ICalculationServiceFactory, CalculationServiceFactory>();
-
-
+builder.Services.AddScoped<IGetCalculationRequestFactory, GetCalculationRequestFactory>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

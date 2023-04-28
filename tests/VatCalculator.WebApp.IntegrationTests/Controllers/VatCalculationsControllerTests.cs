@@ -18,11 +18,11 @@ namespace VatCalculator.WebApp.IntegrationTests.Controllers
         {
             // arrange
             using var client = _factory.CreateClient();
-            var vatRate = 10;
-            var priceWithoutVat = 250;
+            var vatRate = 13;
+            var vat = 32.50m;
 
             // act
-            var response = await client.GetAsync($"api/vat-calculations?vatRate={vatRate}&priceWithoutVat={priceWithoutVat}");
+            var response = await client.GetAsync($"api/vat-calculations?vatRate={vatRate}&vat={vat}");
 
             // assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299

@@ -3,7 +3,7 @@ using VatCalculator.Domain.Common;
 
 namespace VatCalculator.Application.Queries.GetVatCalculationQuery;
 
-public class GetVatCalculationRequest : IRequest<Result<GetVatCalculationResponse>>
+public class GetVatCalculationInput
 {
     public decimal VatRate { get; set; }
 
