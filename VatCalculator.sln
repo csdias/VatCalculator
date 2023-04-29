@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VatCalculator.WebApp.Integr
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{176EC3AF-FBBD-4382-A12D-331645616745}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLogger", "src\AppLogger\AppLogger.csproj", "{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{176EC3AF-FBBD-4382-A12D-331645616745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176EC3AF-FBBD-4382-A12D-331645616745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176EC3AF-FBBD-4382-A12D-331645616745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{05B55D2E-987E-4F25-A880-FE4F61C1E7D2} = {BE762858-732A-4162-8F13-2163A73BBCDA}
 		{5672E909-FA3F-4F3E-AB6F-F518DE59C736} = {B11ECF19-044B-433A-97EA-6FDD41BBE5F0}
 		{C6ADDA14-52BE-4C36-8540-07C0FD5B3523} = {BE762858-732A-4162-8F13-2163A73BBCDA}
+		{8F54FB3C-AF92-4937-A6E5-25D2D7AB4C7C} = {B11ECF19-044B-433A-97EA-6FDD41BBE5F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A29E5E7C-97B1-45E8-ACF6-C566399FEF96}
