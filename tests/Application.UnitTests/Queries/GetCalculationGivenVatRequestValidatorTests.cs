@@ -17,7 +17,7 @@ public class GetCalculationGivenVatRequestValidatorTests
     {
         // arrange
         var query = new GetCalculationGivenVatRequest() { VatRate = 13, PriceWithoutVat = 0, Vat = 32.50m, PriceWithVat = 0 };
-        var validator = new GetCalculationGivenVatRequestValidator();
+        var validator = new GetVatCalculationRequestValidator();
 
         // act
         var result = validator.Validate(query);
@@ -31,8 +31,8 @@ public class GetCalculationGivenVatRequestValidatorTests
     {
         // arrange
         var query = new GetCalculationGivenVatRequest() { PriceWithoutVat = 0, Vat = 32.50m, PriceWithVat = 0 };
-        var validator = new GetCalculationGivenVatRequestValidator();
-
+        var validator = new GetVatCalculationRequestValidator();
+            
         // act
         var result = validator.Validate(query);
 
@@ -47,7 +47,7 @@ public class GetCalculationGivenVatRequestValidatorTests
     {
         // arrange
         var query = new GetCalculationGivenVatRequest() { VatRate = 7 };
-        var validator = new GetCalculationGivenVatRequestValidator();
+        var validator = new GetVatCalculationRequestValidator();
 
         // act
         var result = validator.Validate(query);
@@ -63,7 +63,7 @@ public class GetCalculationGivenVatRequestValidatorTests
     {
         // arrange
         var query = new GetCalculationGivenVatRequest() { VatRate = 13, PriceWithoutVat = 250, Vat = 32.5m, PriceWithVat = 0 };
-        var validator = new GetCalculationGivenVatRequestValidator();
+        var validator = new GetVatCalculationRequestValidator();
 
         // act
         var result = validator.Validate(query);
@@ -79,7 +79,7 @@ public class GetCalculationGivenVatRequestValidatorTests
     {
         // arrange
         var query = new GetCalculationGivenVatRequest() { VatRate = 20, PriceWithoutVat = 0, Vat = 0, PriceWithVat = 0 };
-        var validator = new GetCalculationGivenVatRequestValidator();
+        var validator = new GetVatCalculationRequestValidator();
 
         // act
         var result = validator.Validate(query);

@@ -3,9 +3,9 @@ using VatCalculator.Application.Queries.GetVatCalculationQuery;
 
 namespace VatCalculator.Application.Validators;
 
-public class GetCalculationGivenVatRequestValidator : AbstractValidator<GetCalculationGivenVatRequest>
+public class GetVatCalculationRequestValidator : AbstractValidator<GetVatCalculationRequest>
 {
-    public GetCalculationGivenVatRequestValidator()
+    public GetVatCalculationRequestValidator()
     {
         RuleFor(x => x).Custom((x, context) =>
         {
