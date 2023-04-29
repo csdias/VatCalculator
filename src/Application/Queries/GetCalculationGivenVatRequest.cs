@@ -1,5 +1,4 @@
-﻿using MediatR;
-using VatCalculator.Domain.Common;
+﻿using VatCalculator.Application.Common.Abstractions;
 
 namespace VatCalculator.Application.Queries.GetVatCalculationQuery;
 

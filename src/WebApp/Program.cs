@@ -2,9 +2,7 @@ using FluentValidation;
 using MediatR;
 using VatCalculator.Application.Behaviors;
 using VatCalculator.Application.Common;
-using VatCalculator.Application.Queries.GetVatCalculationQuery;
-using VatCalculator.Application.Services;
-using VatCalculator.Application.Services.Abstractions;
+using VatCalculator.Application.Common.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
 

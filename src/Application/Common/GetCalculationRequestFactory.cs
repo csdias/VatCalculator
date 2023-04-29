@@ -1,9 +1,5 @@
-﻿using MediatR;
-using VatCalculator.Application.Queries.GetVatCalculationQuery;
-using VatCalculator.Application.Services;
-using VatCalculator.Application.Services.Abstractions;
-using VatCalculator.Domain.Common;
-using VatCalculator.Domain.Entities;
+﻿using VatCalculator.Application.Queries.GetVatCalculationQuery;
+using VatCalculator.Application.Common.Abstractions;
 
 namespace VatCalculator.Application.Common;
 

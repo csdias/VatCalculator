@@ -1,7 +1,4 @@
-﻿using MediatR;
-using VatCalculator.Domain.Common;
-
-namespace VatCalculator.Application.Queries.GetVatCalculationQuery;
+﻿namespace VatCalculator.Application.Common;
 
 public class GetVatCalculationInput
 {

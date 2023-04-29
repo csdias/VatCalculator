@@ -1,9 +1,4 @@
-﻿using MediatR;
-using VatCalculator.Application.Queries.GetVatCalculationQuery;
-using VatCalculator.Domain.Common;
-using VatCalculator.Domain.Entities;
-
-namespace VatCalculator.Application.Services.Abstractions;
+﻿namespace VatCalculator.Application.Common.Abstractions;
 
 public interface IGetCalculationRequestFactory
 {

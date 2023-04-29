@@ -1,4 +1,4 @@
-﻿namespace VatCalculator.Application.Queries.GetVatCalculationQuery;
+﻿namespace VatCalculator.Application.Common;
 
 public class GetVatCalculationResponse
 {

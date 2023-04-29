@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using VatCalculator.Domain.Common;
 
-namespace VatCalculator.Application.Queries.GetVatCalculationQuery;
+namespace VatCalculator.Application.Common.Abstractions;
 
 public abstract class GetVatCalculationRequest : IRequest<Result<GetVatCalculationResponse>>
 {

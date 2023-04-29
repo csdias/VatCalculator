@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using VatCalculator.Application.Queries.GetVatCalculationQuery;
+using VatCalculator.Application.Common.Abstractions;
 
-namespace VatCalculator.Application.Validators;
+namespace VatCalculator.Application.Common.Validators;
 
 public class GetVatCalculationRequestValidator : AbstractValidator<GetVatCalculationRequest>
 {

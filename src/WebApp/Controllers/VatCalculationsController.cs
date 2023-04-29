@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
-using VatCalculator.Application.Queries.GetVatCalculationQuery;
+using VatCalculator.Application.Common;
+using VatCalculator.Application.Common.Abstractions;
 using VatCalculator.Domain.Common;
-using VatCalculator.Application.Services.Abstractions;
-using VatCalculator.Domain.Entities;
 
 namespace VatCalculator.App.Controllers
 {

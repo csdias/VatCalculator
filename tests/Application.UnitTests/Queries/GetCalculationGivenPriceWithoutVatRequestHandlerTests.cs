@@ -1,9 +1,10 @@
 using FluentAssertions;
+using VatCalculator.Application.Common;
 using VatCalculator.Application.Queries.GetVatCalculationQuery;
 using VatCalculator.Domain.Common;
 using Xunit;
 
-namespace VatCalculator.Application.UnitTests.Queries;
+namespace VatCalculator.Application.Queries.UnitTests;
 
 public class GetCalculationGivenPriceWithoutVatRequestHandlerTests
 {

@@ -1,16 +1,11 @@
 using FluentAssertions;
 using VatCalculator.Application.Queries.GetVatCalculationQuery;
-using VatCalculator.Application.Validators;
 using Xunit;
 
-namespace VatCalculator.Application.UnitTests.Queries;
+namespace VatCalculator.Application.Common.Validators.UnitTests;
 
-public class GetCalculationGivenVatRequestValidatorTests
+public class GetVatCalculationRequestValidatorTests
 {
-
-    public GetCalculationGivenVatRequestValidatorTests()
-    {
-    }
 
     [Fact]
     public async Task Validate_When_InputIsCorrect_Then_ResultIsValid()
@@ -32,13 +27,13 @@ public class GetCalculationGivenVatRequestValidatorTests
         // arrange
         var query = new GetCalculationGivenVatRequest() { PriceWithoutVat = 0, Vat = 32.50m, PriceWithVat = 0 };
         var validator = new GetVatCalculationRequestValidator();
-            
+
         // act
         var result = validator.Validate(query);
 
         // assert
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.ErrorMessage == 
+        result.Errors.Should().Contain(e => e.ErrorMessage ==
         "Invalid VAT rate. Please, choose a value between 10, 13 and 20.");
     }
 
@@ -70,7 +65,7 @@ public class GetCalculationGivenVatRequestValidatorTests
 
         // assert
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain( e => e.ErrorMessage == 
+        result.Errors.Should().Contain(e => e.ErrorMessage ==
             "More than one value error. Please enter only one value between VAT, Price without VAT and Price with VAT.");
     }
 
@@ -86,7 +81,7 @@ public class GetCalculationGivenVatRequestValidatorTests
 
         // assert
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.ErrorMessage == 
+        result.Errors.Should().Contain(e => e.ErrorMessage ==
             "There must be at least one value between VAT, Price without VAT and Price with VAT");
     }
 
