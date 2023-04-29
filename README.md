@@ -3,17 +3,17 @@
 The easiest way to get started is to install the [NuGet package](https://www.nuget.org/packages/vat-calculator/) and run:
 
 ```
-dotnet new install vat-calculator::1.0.1
+dotnet new install vat-calculator::1.0.4
 ```
 
 To run the tests:
 ```
-repo root path> dotnet test <enter>
+repo root path> dotnet test VatCalculator.sln <enter>
 ```
 
 To run the Vat Calculator: 
 ```
-repo root path\src\VarCalculator\WepApp> dotnet run --launch-profile https <enter>
+root folder\src\WepApp> dotnet run --launch-profile https <enter>
 ```
 
 In the browser, navigate to 
