@@ -10,6 +10,7 @@ WORKDIR /src
 COPY ["src/WebApp/VatCalculator.WebApp.csproj", "src/WebApp/"]
 COPY ["src/Application/VatCalculator.Application.csproj", "src/Application/"]
 COPY ["src/Domain/VatCalculator.Domain.csproj", "src/Domain/"]
+
 RUN dotnet restore "src/WebApp/VatCalculator.WebApp.csproj"
 COPY . .
 WORKDIR "/src/src/WebApp"

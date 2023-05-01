@@ -8,24 +8,7 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
-	<IsPackable>true</IsPackable>
-    <PackageId>vat-calculator</PackageId>
-    <Authors>csdias</Authors>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>vat-calculator</Title>
-    <Product>vat-calculator</Product>
-    <Description>vat calculator</Description>
-    <AnalysisLevel>latest</AnalysisLevel>
-    <Version>1.0.4</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />

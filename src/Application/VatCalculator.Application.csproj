@@ -4,6 +4,18 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <IsPackable>true</IsPackable>
+	  <PackageId>vat-calculator</PackageId>
+	  <Authors>csdias</Authors>
+	  <Title>vat-calculator</Title>
+	  <Product>vat-calculator</Product>
+	  <Description>vat calculator lib using cqrs and strategy concepts</Description>
+	  <AnalysisLevel>latest</AnalysisLevel>
+	  <Version>1.0.11</Version>
+	  <PackageProjectUrl>https://github.com/csdias/vat-calculator</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/csdias/vat-calculator</RepositoryUrl>
+	  <PackageTags>vat calculator; cqrs, strategy pattern</PackageTags>
+	  <PackageReleaseNotes>this is meant to be a lib</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
